@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{ 
+	margin: 0; 
+	padding: 0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+/*  box-sizing: inherit;*/
+}
+
+::selection{
+  background: rgba(23,162,184,0.3);
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+
+	font-family: 'Roboto', sans-serif;
+/*	font-family: 'Poppins', sans-serif;*/
+	font-style: normal;
+	font-weight: 300;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 15px;
+	background: #eee;
+}
+*/
+
+.cd__credit{
+    padding: 12px;
+    font-size: 9pt;
+    margin-top: 40px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.cd__main{
+  /*background: #fff;*/
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.cd__main{
+    display: flex;
+    width: 100%;
+}
+
+.cd__header {
+    padding-top: 12px;
+    padding-right: 20px;
+    font-size: 14pt;
+    margin-top: 10px;
+    margin-right: 10px;
+	position: absolute;
+	top: 0px;
+	left: 300px;
+	background: #eee;
+}
+
+section {
+	width:70%;
+	margin-top: 50px;
+	margin-right: 200px;
+	margin-left: 50px;
+	
+	padding: 0px 100px;
+	min-height: 80vh;
+	/*background: #f00;*/
+}
+
+section .content{
+	width:70%;
+	display: none;
+	/*background: #fff;*/
+}
+
+
+section .content > .tab-pane {
+	display: none;
+}
+
+section .content > .active {
+	display: block;
+}
+
+.fade {
+	opacity: 0;
+}
+
+section .form-group label {
+	font-style: italic ;
+	font-weight: normal;
+	color: #ababab;
+}
+
+section h4 {
+	font-style: normal ;
+	font-weight: normal;
+	color: #17a2b8;
+}
+
+.glyphicon-ok {
+	color: green;
+}
+
+
+/***************************** notifications **********************/
+
+/* tickets accordion*/
+.ticket_accordion {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: solid 1px #ccc;
+}
+
+.ticket_accordion .accordion {
+  background-color: #ebebeb;
+  color: #444;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  transition: 0.4s;
+}
+
+.ticket_accordion .active, 
+.ticket_accordion .accordion:hover {
+  background-color: #ddd; 
+}
+
+.ticket_accordion .panel {
+  padding: 0 15px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+.ticket_accordion .panel td{
+	font-size: 12px;
+	padding: 5px 10px 0px 0px;
+}
+

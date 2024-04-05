@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+*{ 
+	margin: 0; 
+	padding: 0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+/*  box-sizing: inherit;*/
+}
+
+::selection{
+  background: rgba(23,162,184,0.3);
+}
+
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-content: flex-start;
+
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 15px;
+	background: #eee;
+}
+*/
+
+.cd__credit{
+    padding: 12px;
+    font-size: 9pt;
+    margin-top: 40px;
+	position: absolute;
+	bottom: 0px;
+}
+
+.cd__main{
+  background: #fff;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.cd__main{
+    display: flex;
+    width: 100%;
+}
+
+.cd__header {
+    padding: 12px;
+    font-size: 14pt;
+    margin-top: 10px;
+	position: absolute;
+	top: 0px;
+}
+
+/*
+@media only screen and (min-width: 1360px){
+    .cd__main{
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto; 
+      padding: 24px;
+    }
+}
+*/
+
+section {
+	width:80%;
+	margin-top: 50px;
+	margin-right: 200px;
+	margin-left: 50px;
+	
+	padding: 0px 100px;
+	min-height: 80vh;
+	/*background: #f00;*/
+}
+
+section .content{
+	width:70%;
+	display: none;
+	/*background: #fff;*/
+}
+
+
+section .content > .tab-pane {
+	display: none;
+}
+
+section .content > .active {
+	display: block;
+}
+
+.fade {
+	opacity: 0;
+}
+
+
+/*
+  input:focus,
+  textarea:focus,
+  select:focus {
+	outline: none;
+  }
+*/
+
+section .form-group label {
+	font-style: italic ;
+	font-weight: normal;
+	color: #ababab;
+}
+
+section h4 {
+	font-style: normal ;
+	font-weight: normal;
+	color: #17a2b8;
+}
+
+.glyphicon-ok {
+	color: green;
+}

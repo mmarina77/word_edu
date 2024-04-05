@@ -1,0 +1,150 @@
+/* Import Google Font - Poppins */
+/*
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+#4D59FB
+*/
+
+.searchWrapper{
+  width: 420px;
+  /*border-radius: 7px;
+  background: #fff;*/
+  padding: 15px 18px 25px 10px;
+  float: right;
+  position: fixed;
+  top: 0px;
+  right: 15px;
+  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);*/
+}
+
+.searchWrapper .search{
+  position: relative;
+  margin: 15px 0 18px;
+}
+
+.search input{
+  height: 30px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 0 42px;
+  border: 1px solid #999;
+}
+.search input:focus{
+  padding: 0 41px;
+  border: 2px solid #17a2b8;
+}
+.search input::placeholder{
+  color: #B8B8B8;
+}
+.search :where(i, span){
+  position: absolute;
+  top: 50%;
+  color: #999;
+  transform: translateY(-50%);
+}
+.search i{
+  left: 18px;
+  pointer-events: none;
+  font-size: 16px;
+}
+.search input:focus ~ i{
+  color: #17a2b8;
+}
+.search span{
+  right: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+}
+.search input:valid ~ span{
+  display: block;
+}
+.searchWrapper .info-text{
+  font-size: 13px;
+  color: #9A9A9A;
+  margin: -3px 0 -10px;
+}
+.searchWrapper.active .info-text{
+  display: none;
+}
+.info-text span{
+  font-weight: 500;
+}
+.searchWrapper ul{
+  height: 100%;
+  opacity: 0;
+  padding-right: 1px;
+  /*overflow-y: hidden;*/
+  transition: all 0.2s ease;
+}
+.searchWrapper.active ul{
+  opacity: 1;
+  height: 600px;
+}
+.searchWrapper ul li{
+  display: flex;
+  list-style: none;
+  margin-bottom: 10px;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #29c3da;		/*#D9D9D9;	#17a2b8*/
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+}
+.searchWrapper ul li:last-child{
+  margin-bottom: 0;
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.searchWrapper ul .word p{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.searchWrapper ul .word span{
+  font-size: 12px;
+  color: #989898;
+}
+
+.searchWrapper ul .word i{
+  color: #17a2b8; /* 999 */
+  font-size: 15px;
+  cursor: pointer;
+}
+.searchWrapper ul .meaning_content{
+  max-height: 600px; /*215px*/
+  overflow-y: auto;
+}
+
+.searchWrapper ul .meaning_content::-webkit-scrollbar{
+  width: 0px;
+}
+
+.meaning_content li .details{
+  padding-left: 5px;
+  border-radius: 4px 0 0 4px;
+  border-left: 1px solid #17a2b8;
+}
+
+/* title */
+.meaning_content li p{
+  font-size: 14px;
+  font-weight: 500;
+  color: #17a2b8;
+}
+.meaning_content li span{
+  font-size: 15px;
+  color: #7E7E7E;
+}
+.meaning_content .synonyms .list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.meaning_content .synonyms span{
+  /*cursor: pointer;*/
+  margin-right: 5px;
+  /*text-decoration: underline;*/
+}
+
