@@ -1,7 +1,7 @@
 <?php
 
 define('APPLICATION_PATH', str_replace('\\', "/", dirname(__FILE__)) . '/');
-define('APPLICATION_URL', 'http://localhost/dic/');
+define('APPLICATION_URL', 'http://marina53022.azurewebsites.net/');
 
 
 $config = [];
